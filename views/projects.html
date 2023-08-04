@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="../images/q-icon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <style>
+      ::selection {
+        color: var(--colors-background);
+        background: var(--colors-cyan);
+        -webkit-text-fill-color: #fff;
+      }
+      .text-gradient {
+        background: -webkit-linear-gradient(135deg, var(--colors-cyan) 0%, var(--colors-green) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <header class="navbar">
+        <div class="navbar-start">
+          <a href="../index.html" class="navbar-brand">
+            <img src="../images/q.png" alt="" class="img-square" />
+          </a>
+        </div>
+        <div class="navbar-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./front-end/home.html">Front-end</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./back-end/home.html">Back-end</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./theme/home.html">Theme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./software/home.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./tips-and-tricks/home.html">Tips and tricks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./joke/home.html">Nghịch</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-icon">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="wrapper">
+          <h1 class="text-gradient">Sáng tạo. Chia sẻ. Thực hành.</h1>
+          <p>
+            Tại đây có một số trang web, ứng dụng mà tôi đã tạo trong quá trình học tập tại
+            <strong>FPT Aptech </strong>. Một số project vẫn đang hoạt động bình thường, có thể một số đã ngừng hoạt
+            động hay đang trong quá trình nâng cấp.
+          </p>
+          <h2>Featured Projects</h2>
+          <div class="wrapper-flex" style="margin-top: 10px; gap: 0">
+            <a href="#" class="btn" style="padding: 20px; width: 25%">
+              <i class="bi bi-heart-fill"></i>
+              <p class="bold" style="margin: 0">Node JS</p>
+              <p style="margin: 0">Một app chỉ sử dụng NodeJS</p>
+              <p class="uppercase-small" style="margin: 0">Trước 12/08</p>
+            </a>
+            <a href="#" class="btn" style="padding: 20px; width: 25%">
+              <i class="bi bi-heart-fill"></i>
+              <p class="bold" style="margin: 0">ASP.NET</p>
+              <p style="margin: 0">Web Developing using ASP.NET MVC</p>
+              <p class="uppercase-small" style="margin: 0">Trong tháng 09</p>
+            </a>
+            <a href="#" class="btn" style="padding: 20px; width: 25%">
+              <i class="bi bi-heart-fill"></i>
+              <p class="bold" style="margin: 0">Resend</p>
+              <p style="margin: 0">New email API for developers</p>
+              <p class="uppercase-small" style="margin: 0">5k+ waitlist</p>
+            </a>
+            <a href="#" class="btn" style="padding: 20px; width: 25%">
+              <i class="bi bi-heart-fill"></i>
+              <p class="bold" style="margin: 0">Resend</p>
+              <p style="margin: 0">New email API for developers</p>
+              <p class="uppercase-small" style="margin: 0">5k+ waitlist</p>
+            </a>
+          </div>
+          <h2>All Projects</h2>
+          <div>
+            <h3>2023</h3>
+            <ul>
+              <li style="margin-left: 32px">
+                <a href="https://react.email" target="_blank" class="link-decoration">Starclasses - Laravel</a>
+              </li>
+            </ul>
+            <h3>2022</h3>
+            <ul>
+              <li style="margin-left: 32px">
+                <a href="https://q5nguyenn.github.io/my-cv/" target="_blank" class="link-decoration">My CV</a>
+              </li>
+              <li style="margin-left: 32px">
+                <a href="https://q5nguyenn.github.io/my-kanban/" target="_blank" class="link-decoration">My Kanban</a>
+              </li>
+              <li style="margin-left: 32px">
+                <a href="https://workos.com" target="_blank" class="link-decoration">Starclasses - Local Storage</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul class="footer-nav">
+          <li class="footer-item">
+            <a class="footer-link" aria-current="page" href="#">Email <i class="bi bi-envelope"></i></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" aria-current="page" href="#">Github <i class="bi bi-github"></i></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" aria-current="page" href="#">Youtube <i class="bi bi-youtube"></i></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" aria-current="page" href="#">Instagram <i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" aria-current="page" href="#">Facebook <i class="bi bi-facebook"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
