@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="../images/q-icon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <style></style>
   </head>
   <body>
     <div class="body">
@@ -19,10 +20,10 @@
         <div class="navbar-center">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="./about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./projects.html">Projects</a>
+              <a class="nav-link" aria-current="page" href="./projects.html">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./front-end/home.html">Front-end</a>
@@ -52,66 +53,36 @@
       </header>
       <main>
         <div class="wrapper">
-          <h1 class="text-gradient">Công việc. Sở thích. Chia sẻ.</h1>
+          <h1 class="text-gradient">Gửi email cho tôi. Nếu bạn thích.</h1>
           <p>
-            Tại đây có một số trang web, ứng dụng mà tôi đã tạo trong quá trình học tập tại
-            <strong>FPT Aptech </strong>. Một số project vẫn đang hoạt động bình thường, có thể một số đã ngừng hoạt
-            động hay đang trong quá trình nâng cấp.
+            Tôi không thể hứa rằng tôi sẽ trả lời email của bạn ngay lập tức, nhưng tôi sẽ cố gắng hết sức để trả lời
+            kịp thời.
           </p>
-          <h2>Featured Projects</h2>
-          <div class="wrapper-flex" style="margin-top: 10px; gap: 0">
-            <a href="#" class="btn" style="padding: 20px; width: 25%">
-              <i class="bi bi-heart-fill"></i>
-              <p class="bold" style="margin: 0">Node JS</p>
-              <p style="margin: 0">Một app chỉ sử dụng NodeJS</p>
-              <p class="uppercase-small" style="margin: 0">Trước 12/08</p>
-            </a>
-            <a href="#" class="btn" style="padding: 20px; width: 25%">
-              <i class="bi bi-heart-fill"></i>
-              <p class="bold" style="margin: 0">ASP.NET</p>
-              <p style="margin: 0">Web Developing using ASP.NET MVC</p>
-              <p class="uppercase-small" style="margin: 0">Trong tháng 09</p>
-            </a>
-            <a href="#" class="btn" style="padding: 20px; width: 25%">
-              <i class="bi bi-heart-fill"></i>
-              <p class="bold" style="margin: 0">Resend</p>
-              <p style="margin: 0">New email API for developers</p>
-              <p class="uppercase-small" style="margin: 0">5k+ waitlist</p>
-            </a>
-            <a href="#" class="btn" style="padding: 20px; width: 25%">
-              <i class="bi bi-heart-fill"></i>
-              <p class="bold" style="margin: 0">Resend</p>
-              <p style="margin: 0">New email API for developers</p>
-              <p class="uppercase-small" style="margin: 0">5k+ waitlist</p>
-            </a>
-          </div>
-          <h2>All Projects</h2>
-          <div>
-            <h3>2023</h3>
-            <ul>
-              <li style="margin-left: 32px">
-                <a href="https://github.com/q5nguyenn/starclasses-v1" target="_blank" class="link-decoration"
-                  >Starclasses - V2</a
-                >
-              </li>
-            </ul>
-            <h3>2022</h3>
-            <ul>
-              <li style="margin-left: 32px">
-                <a href="https://q5nguyenn.github.io/my-cv/" target="_blank" class="link-decoration">My CV</a>
-              </li>
-              <li style="margin-left: 32px">
-                <a href="https://q5nguyenn.github.io/my-kanban/" target="_blank" class="link-decoration">My Kanban</a>
-              </li>
-              <li style="margin-left: 32px">
-                <a href="https://q5nguyenn.github.io/sim/" target="_blank" class="link-decoration">SIM</a>
-              </li>
-              <li style="margin-left: 32px">
-                <a href="https://github.com/q5nguyenn/starclasses-v1" target="_blank" class="link-decoration"
-                  >Starclasses - V1</a
-                >
-              </li>
-            </ul>
+          <h2>Send an email</h2>
+          <div class="wrapper-flex">
+            <div class="wrapper-left">
+              <form class="form">
+                <div class="input-item">
+                  <label for="name">Name</label
+                  ><input type="text" id="name" placeholder="Nguyễn Quý" required="" class="c-jLJtXG" />
+                </div>
+                <div class="input-item">
+                  <label for="email">Email</label
+                  ><input type="email" id="email" placeholder="q5nguyenn@gmail.com" required="" class="c-jLJtXG" />
+                </div>
+                <div class="input-item">
+                  <label for="message">Message</label
+                  ><textarea
+                    id="message"
+                    placeholder="How can I help you?"
+                    rows="4"
+                    required=""
+                    class="c-jLJtXG"
+                  ></textarea>
+                </div>
+                <div class="form-footer"><button type="submit" class="c-eKOIRR">Send</button></div>
+              </form>
+            </div>
           </div>
         </div>
       </main>

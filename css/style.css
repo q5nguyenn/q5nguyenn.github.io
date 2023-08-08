@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 *,
 *:after,
 *:before {
@@ -27,14 +28,28 @@
   --space-navHeightMobile: 110px;
   --transitions-duration: 0.2s;
   --radii-borderRadius: 8px;
+  /* --backdrop-blur: 12px; */
+  /* --linear-gradient: linear-gradient(135deg, var(--colors-pink) 0%, var(--colors-purple) 100%); */
+  /* --colors-select: #ff80bf; */
+}
+
+::selection {
+  color: var(--colors-background);
+  background: var(--colors-select);
+  -webkit-text-fill-color: #000;
+}
+
+html * {
+  color: var(--colors-primary);
+  font-family: var(--fonts-body);
+}
+
+span {
+  color: var(--colors-secondary);
 }
 
 .body {
   background-color: var(--colors-background);
-  font-family: var(--fonts-body);
-  color: #fff;
-  font-size: 16px;
-  line-height: 32px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -56,11 +71,12 @@ main {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
+  background-color: var(--colors-background);
 }
 
 .navbar-start {
@@ -177,13 +193,13 @@ main {
 h1 {
   font-family: var(--fonts-heading);
   font-size: 48px;
-  line-height: 50px;
+  line-height: 55px;
   margin: 0 0 20px;
   color: var(--colors-primary);
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(135deg, var(--colors-pink) 0%, var(--colors-purple) 100%);
+  background: var(--linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -533,16 +549,20 @@ li {
   display: flex;
   font-size: 14px;
   line-height: 28px;
+  border: 1px solid #f2f2f222;
 }
 
 .popup-btn-close {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.popup-btn-close i {
   color: var(--colors-secondary);
 }
 
-.popup-btn-close:hover {
+.popup-btn-close:hover i {
   color: var(--colors-primary);
 }
 
@@ -553,4 +573,127 @@ li {
 
 .popup-content {
   color: rgb(138, 143, 152);
+}
+
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.search-body {
+  width: 600px;
+  height: min-content;
+  margin-top: 50px;
+  backdrop-filter: saturate(300%) blur(25px);
+  border-radius: var(--radii-borderRadius);
+  overflow: hidden;
+  background-color: var(--colors-command);
+}
+
+.search-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: 0px;
+  background: transparent;
+  color: var(--colors-primary);
+}
+
+.search-result-item {
+  padding: 12px 16px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-result-item div {
+  color: var(--colors-secondary);
+  line-height: unset;
+}
+
+.search-result-item i {
+  color: var(--colors-primary);
+}
+
+.search-result-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.search-result-item:hover div {
+  color: var(--colors-primary);
+  transition: 0.3s;
+}
+
+li {
+  line-height: 32px;
+}
+
+.form {
+  width: 100%;
+}
+
+.input-item label {
+  color: var(--colors-secondary);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  display: block;
+}
+
+.input-item input {
+  color: var(--colors-primary);
+  outline: none;
+  background: none;
+  border: 1px solid var(--colors-secondary);
+  border-radius: var(--radii-borderRadius);
+  padding: 10px;
+  width: 100%;
+}
+
+.input-item input:focus,
+.input-item textarea:focus {
+  border: 1px solid var(--colors-select);
+}
+
+.input-item textarea {
+  color: var(--colors-primary);
+  background: none;
+  outline: none;
+  border: 1px solid var(--colors-secondary);
+  border-radius: var(--radii-borderRadius);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-footer button {
+  border: 1px solid var(--colors-secondary);
+  border-radius: var(--radii-borderRadius);
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 5px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: var(--colors-background);
+  background-color: var(--colors-secondary);
+}
+
+.form-footer button:hover {
+  background-color: var(--colors-background);
+  color: var(--colors-select);
+  border: 1px solid var(--colors-select);
 }
