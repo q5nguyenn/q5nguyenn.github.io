@@ -31,11 +31,20 @@ function showResultSearch(keyword) {
   links.forEach((element) => {
     let name = element['name'].toLowerCase();
     if (name.includes(keyword)) {
-      let html = `<a class="search-result-item" href="/${element['url']}" style="text-decoration: none" 
-			target="${element['target']}" id="${element['id']}" >
-			<div class="search-result-item-name" style="margin-right: 10px">${element['icon']}</div>
-			<div>${element['name']}</div>
-			</a>`;
+      let html = '';
+      if (element['target'] == '_blank') {
+        html = `<a class="search-result-item" href="${element['url']}" style="text-decoration: none" 
+				target="${element['target']}" id="${element['id']}" >
+				<div class="search-result-item-name" style="margin-right: 10px">${element['icon']}</div>
+				<div>${element['name']}</div>
+				</a>`;
+      } else {
+        html = `<a class="search-result-item" href="/${element['url']}" style="text-decoration: none" 
+				target="${element['target']}" id="${element['id']}" >
+				<div class="search-result-item-name" style="margin-right: 10px">${element['icon']}</div>
+				<div>${element['name']}</div>
+				</a>`;
+      }
       if (element['type'] == 'general') {
         htmlGeneral += html;
       } else {
